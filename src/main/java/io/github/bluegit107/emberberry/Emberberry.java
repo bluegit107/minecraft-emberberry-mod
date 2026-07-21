@@ -1,5 +1,6 @@
 package io.github.bluegit107.emberberry;
 
+import io.github.bluegit107.emberberry.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.util.Identifier;
@@ -20,7 +21,7 @@ public class Emberberry implements ModInitializer {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
-
+		ModItems.registerItems();
 		LOGGER.info("Hello Fabric world!");
 	}
 
