@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "food",
+  "ingredients": [
+    { "item": "minecraft:sweet_berries" },
+    { "item": "minecraft:glowstone_dust" }
+  ],
+  "result": {
+    "id": "emberberry:ember_berry",
+    "count": 1
+  }
+}
