@@ -17,6 +17,9 @@
 	"entrypoints": {
 		"main": [
 			"io.github.bluegit107.emberberry.Emberberry"
+		],
+		"client": [
+			"io.github.bluegit107.emberberry.EmberberryClient"
 		]
 	},
 	"mixins": [
