@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "age=0": { "model": "emberberry:block/ember_berry_crop_stage0" },
+    "age=1": { "model": "emberberry:block/ember_berry_crop_stage1" },
+    "age=2": { "model": "emberberry:block/ember_berry_crop_stage2" },
+    "age=3": { "model": "emberberry:block/ember_berry_crop_stage3" }
+  }
+}

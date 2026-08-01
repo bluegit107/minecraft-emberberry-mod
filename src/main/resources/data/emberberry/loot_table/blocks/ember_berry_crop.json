@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "emberberry:ember_berry",
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "emberberry:ember_berry_crop",
+                  "properties": { "age": "3" }
+                }
+              ],
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": { "type": "minecraft:uniform", "min": 1, "max": 3 }
+                }
+              ]
+            },
+            { "type": "minecraft:empty" }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        { "type": "minecraft:item", "name": "emberberry:ember_berry_seeds" }
+      ]
+    }
+  ]
+}

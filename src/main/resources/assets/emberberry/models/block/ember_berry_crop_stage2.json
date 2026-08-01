@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "emberberry:block/ember_berry_crop_stage2"
+  }
+}

@@ -1,4 +1,7 @@
 {
   "item.emberberry.ember_berry": "엠버베리",
-  "item.emberberry.ember_berry.tooltip": "은은하게 빛나는 따뜻한 열매. 배고픔을 채워준다."
+  "item.emberberry.ember_berry.tooltip": "은은하게 빛나는 따뜻한 열매. 배고픔을 채워준다.",
+
+  "block.emberberry.ember_berry_crop": "엠버베리 작물",
+  "item.emberberry.ember_berry_seeds": "엠버베리 씨앗"
 }

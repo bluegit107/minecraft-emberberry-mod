@@ -1,4 +1,7 @@
 {
   "item.emberberry.ember_berry": "Ember Berry",
-  "item.emberberry.ember_berry.tooltip": "A warm, faintly glowing berry. Restores hunger."
+  "item.emberberry.ember_berry.tooltip": "A warm, faintly glowing berry. Restores hunger.",
+
+  "block.emberberry.ember_berry_crop": "Ember Berry Crop",
+  "item.emberberry.ember_berry_seeds": "Ember Berry Seeds"
 }

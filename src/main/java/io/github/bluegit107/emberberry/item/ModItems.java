@@ -1,10 +1,12 @@
 package io.github.bluegit107.emberberry.item;
 
 import io.github.bluegit107.emberberry.Emberberry;
+import io.github.bluegit107.emberberry.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.component.type.FoodComponent;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
@@ -39,6 +41,11 @@ public class ModItems {
             settings -> new EmberBerryItem(settings.food(EMBER_BERRY_FOOD))
     );
 
+    public static final Item EMBER_BERRY_SEEDS = registerItem(
+            "ember_berry_seeds",
+            settings -> new AliasedBlockItem(ModBlocks.EMBER_BERRY_CROP, settings)
+    );
+
     private static Item registerItem(String name, Function<Item.Settings, Item> factory) {
         RegistryKey<Item> key = RegistryKey.of(
                 RegistryKeys.ITEM,
@@ -52,5 +59,8 @@ public class ModItems {
     public static void registerItems() {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK)
                 .register(entries -> entries.add(EMBER_BERRY));
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL)
+                .register(entries -> entries.add(EMBER_BERRY_SEEDS));
     }
 }
